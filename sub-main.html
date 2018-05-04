@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | Admin Panel</title>
+    <!-- Core CSS - Include with every page -->
+    <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/style1.css" rel="stylesheet" />
+    <link href="assets/css/main-style.css" rel="stylesheet" />
+	 <link href="css/stud.css" rel="stylesheet" type="text/css"/>
+    <!-- Page-Level CSS -->
+    <link href="assets/plugins/morris/morris-0.4.3.min.css" rel="stylesheet" />
+<style>
+h4{margin-top:0 !important;}
+.list-group-item{
+min-height:40px;
+}
+.dept{
+margin:0 auto;
+}
+</style>
+   </head>
+<body>
+    <!--  wrapper -->
+    <div id="wrapper" >
+        <!-- navbar side -->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <!-- sidebar-collapse -->
+            <div class="sidebar-collapse" >
+                <!-- side-menu -->
+                <ul class="nav" id="side-menu" style="background-color:#323232;">
+                    <li>
+                        <!-- user image section-->
+                        <div class="user-section" style="background-color: #323232">
+                            
+                            <div class="user-info" style="position: relative; left: 5%;">
+                               <div>Sub Admin</div>
+                            </div>
+
+                        </div>
+                        <!--end user image section-->
+                    </li>
+                    <li class="sidebar-search">
+                        <!-- search section-->
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Faculty">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                    Search
+                                </button>
+                            </span>
+                        </div>
+                        <!--end search section-->
+                    </li>							
+                <!-- end side-menu -->
+            </div>
+            <!-- end sidebar-collapse -->
+        </nav>
+        <!-- end navbar side -->
+        <!--  page-wrapper -->
+        <div id="page-wrapper">
+
+            <div class="row">
+                <!-- Page Header -->
+               
+                <!--End Page Header -->
+            </div>
+           <div class="header">
+            	<form action="logout.php" method="post">
+            		<div style="height: 100%; position: absolute; right: 0px;">
+            			<button type="submit" name="logout" class="btn bg-maroon btn-flat margin logout">Logout</button>
+            		</div>
+            	</form>
+            </div><br>
+			<div class="row">
+					<!-- Welcome -->
+					<div class="col-lg-12">
+						<div class="alert alert-info">
+							<i class="fa fa-folder-open"></i><b>&nbsp;Hello ! </b>Welcome  <b><?php echo $_SESSION['name'];?></b>
+						</div>
+					</div>
+					<!--end  Welcome -->
+			</div>
+			<div class="row dept">
+				<div class="col-md-12" style="border:1px solid black; padding-top:15px; padding-bottom:15px;">
+					<h4 ><a class="list-group-item list-group-item-info" style="text-align:center;">CSE Department</a></h4>
+						
+					<div class="list-group-item ">
+						<div class="col-sm-6">Dr. Major Singh Goraya</div>
+						<div class="col-sm-3"><i class="fa fa-check-circle" style="color:green;"></i> </div>
+						<div class="col-sm-3"><span class=" pull-right"><i class='fa fa-print'></i></span></div>
+					</div>
+					<div class="list-group-item ">
+						<div class="col-sm-6">Dr. Damanpreet Singh</div>
+						<div class="col-sm-3"><i class="fa fa-check-circle" style="color:green;"></i> </div>
+						<div class="col-sm-3"><span class=" pull-right"><i class='fa fa-print'></i></span></div>
+					</div>
+					<div class="list-group-item ">
+						<div class="col-sm-6">Dr. Birmohan Singh </div>
+						<div class="col-sm-3"><i class="fa fa-times-circle" style="color:red;"></i> </div>
+						<div class="col-sm-3"><span class=" pull-right"><i class='fa fa-print'></i></span></div>
+					</div>
+					<div class="list-group-item ">
+						<div class="col-sm-6">Dr. Manoj Sachan</div>
+						<div class="col-sm-3"><i class="fa fa-times-circle" style="color:red;"></i> </div>
+						<div class="col-sm-3"><span class=" pull-right"><i class='fa fa-print'></i></span></div>
+					</div>
+					<div class="list-group-item ">
+						<div class="col-sm-6">Gurjinder Kaur</div>
+						<div class="col-sm-3"><i class="fa fa-check-circle" style="color:green;"></i> </div>
+						<div class="col-sm-3"><span class=" pull-right"><i class='fa fa-print'></i></span></div>
+					</div>					
+				</div>	
+			</div>     	
+        </div>
+        <!-- end page-wrapper -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <!-- Core Scripts - Include with every page -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="assets/plugins/pace/pace.js"></script>
+    <script src="assets/scripts/siminta.js"></script>
+    <!-- Page-Level Plugin Scripts-->
+    <script src="assets/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/plugins/morris/morris.js"></script>
+    <script src="assets/scripts/dashboard-demo.js"></script>
+	
+
+</body>
+
+</html>

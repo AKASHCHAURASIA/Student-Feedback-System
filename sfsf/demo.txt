@@ -1,0 +1,19 @@
+ICD3yr2k14
+pg2k14
+3yrDegree2k14
+4yrDegree2k14
+PG2013
+PhD2k15
+Icd2015
+icd2016
+PhD2k15
+2yrDiploma2015
+2yrDiploma2k14
+if($db_group1=='3yrDegree2k'.Date('y') ||$db_group1=='3yrDegree2k'.date('y') ||$db_group1=='3yrDegree2k'.(date('y')-1) || $db_group1=='3yrDegree2k'.(date('y')-2)|| $db_group1=='3yrDegree2k'.(date('y')-3)||$db_group1=='3yrDegree2k'.(date('y')-4)||$db_group1=='3yrDegree2k'.Date('y') ||$db_group1=='3yrDegree20'.date('y') ||$db_group1=='3yrDegree20'.(date('y')-1) || $db_group1=='3yrDegree20'.(date('y')-2)|| $db_group1=='3yrDegree20'.(date('y')-3)||$db_group1=='3yrDegree20'.(date('y')-4)||$db_group1=='4yrDegree20'.Date('y') ||$db_group1=='3yrDegree20'.date('y') ||$db_group1=='3yrDegree20'.(date('y')-1) || $db_group1=='3yrDegree20'.(date('y')-2)|| $db_group1=='3yrDegree20'.(date('y')-3)||$db_group1=='3yrDegree20'.(date('y')-4))
+				 $db_post1='student';
+			else if($db_group1=='Contract_2014-15' || $db_group1=='Open Group')
+					$db_post1='teacher';
+				else
+				{
+					$msg='you Can not Login To This Site';
+				}
